@@ -213,7 +213,7 @@ msgid "PyLoad on/off"
 msgstr ""
 
 msgctxt "#30083"
-msgid "Username"
+msgid "E-Mail"
 msgstr ""
 
 msgctxt "#30084"

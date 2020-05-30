@@ -12,13 +12,15 @@ SITE_NAME = 'Kinoger'
 SITE_ICON = 'kinoger.png'
 SITE_SETTINGS = '<setting default="kinoger.com" enable="!eq(-2,false)" id="kinoger-domain" label="30051" type="labelenum" values="kinoger.com|kinoger.to" />'
 DOMAIN = cConfig().getSetting('kinoger-domain')
-URL_MAIN = 'https://' + DOMAIN
-URL_SERIE = URL_MAIN + 'stream/serie/'
+#URL_MAIN = 'https://' + DOMAIN
+URL_MAIN = 'https://kinoger.to'
+URL_SERIE = URL_MAIN + '/stream/serie/'
+
 
 def load():
     logger.info("Load %s" % SITE_NAME)
     params = ParameterHandler()
-    geturl(URL_MAIN)
+    #geturl(URL_MAIN)
     params.setParam('sUrl', URL_MAIN)
     cGui().addFolder(cGuiElement('Filme & Serien', SITE_IDENTIFIER, 'showEntries'), params)
     params.setParam('sUrl', URL_SERIE)
@@ -44,7 +46,7 @@ def showGenre():
 
 
 def showEntries(entryUrl=False, sGui=False, sSearchText=False):
-    geturl(URL_MAIN)
+    #geturl(URL_MAIN)
     oGui = sGui if sGui else cGui()
     params = ParameterHandler()
     if not entryUrl: entryUrl = params.getValue('sUrl')
@@ -108,7 +110,7 @@ def showEntries(entryUrl=False, sGui=False, sSearchText=False):
         oGui.setEndOfDirectory()
 
 def showSeasons():
-    geturl(URL_MAIN)
+    #geturl(URL_MAIN)
     params = ParameterHandler()
     entryUrl = params.getValue('entryUrl')
     sThumbnail = params.getValue('sThumbnail')
@@ -256,7 +258,7 @@ def showSearch():
     oGui.setEndOfDirectory()
 
 def _search(oGui, sSearchText):
-    geturl(URL_MAIN)
+    #geturl(URL_MAIN)
     showEntries(URL_MAIN, oGui, sSearchText)
 
 def Qualy2(sUrl):

@@ -217,7 +217,7 @@ msgstr "PyLoad an/aus"
 
 msgctxt "#30083"
 msgid ""
-msgstr "Benutzername"
+msgstr "E-Mail"
 
 msgctxt "#30084"
 msgid ""

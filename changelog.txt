@@ -1,5 +1,11 @@
+3.5.15~nightly2
+  30.04.2020
+  Update:
+- Languages strings.po und strings.xml (Benutername umgestellt auf E-Mail für s.to)
+
 3.5.15~nightly1
   03.04.2020
+- [topstreamfilm] add again fix hoster
 - UpdateManager add 'enforce Update'
 
 3.5.14
