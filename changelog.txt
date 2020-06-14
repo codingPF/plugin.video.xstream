@@ -1,6 +1,13 @@
+3.5.15~nightly3
+  02.06.2020
+  Update:
+- Update Manager (Change URLResolver master auf nightly branche)
+- [pureanime] fix hoster
+
 3.5.15~nightly2
   30.04.2020
   Update:
+- [Flimmerstube] fix
 - Languages strings.po und strings.xml (Benutername umgestellt auf E-Mail für s.to)
 
 3.5.15~nightly1

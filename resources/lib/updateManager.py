@@ -26,7 +26,7 @@ PLUGIN_ID = addon().getAddonInfo('id')  # ist z.B. 'plugin.video.xstream'
 def urlResolverUpdate(silent=False):
     username = 'streamxstream'
     plugin_id = 'script.module.urlresolver'
-    branch = 'master'
+    branch = 'nightly'
     token = 'YTg1OWU1OGE1ZDU5M2QwN2EwZjEwNDg0MWJjMDE4ZWE3ZDIxM2VhYQ=='
 
     try:
